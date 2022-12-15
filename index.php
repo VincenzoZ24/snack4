@@ -8,17 +8,16 @@
 </head>
 <body>
     <?php
-    $arrnumber = [];
-    for($i = 0; $i <= 15; $i++){
+    $arr_number = [];
+    while(count($arr_number) < 15){
         $numeri = rand(1,100);
         if(!in_array($numeri, $arrnumber)){
-            $arrnumber = $numeri;
-            echo '<li>';
-            echo $arrnumber;
-            echo '</li>';
+            $arr_number[] = $numeri;
+            
         }
-        
+       
     };
+    var_dump($arr_number);
     ?>
 </body>
 </html>
